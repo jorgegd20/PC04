@@ -22,7 +22,7 @@ namespace PC04.Controllers
         }
         public IActionResult Index(Foto f)
         {
-            var fotos = _context.Fotos.OrderBy(f => f.Fecha).ToList();
+            var fotos = _context.Fotos.OrderByDescending(f => f.Fecha).ToList();
             return View(fotos);
         }
 

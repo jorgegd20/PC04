@@ -105,3 +105,5 @@ J:\USMP\PC04\pc04\obj\Debug\net5.0\PC04.dll
 J:\USMP\PC04\pc04\obj\Debug\net5.0\ref\PC04.dll
 J:\USMP\PC04\pc04\obj\Debug\net5.0\PC04.pdb
 J:\USMP\PC04\pc04\obj\Debug\net5.0\PC04.genruntimeconfig.cache
+J:\USMP\PC04\pc04\obj\Debug\net5.0\Razor\Views\Home\Registrar.cshtml.g.cs
+J:\USMP\PC04\pc04\obj\Debug\net5.0\Razor\Views\Home\Vacio.cshtml.g.cs

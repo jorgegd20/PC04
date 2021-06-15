@@ -1,8 +1,28 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<Foto>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Lista de Fotos</h1>
+
+<table class="table table-dark border">
+      <tr>
+          <th>Id</th>
+          <th>Titulo</th>
+          <th>Foto</th>
+          <th>Fecha</th>
+      </tr>
+      @foreach (var item in Model)
+      {
+          <tr>
+              <td>@item.Id</td>
+              <td>@item.Titulo</td>
+              <td><img src="@item.URL"></td>
+              <td>@item.Fecha</td>
+          </tr>
+      }
+      @if (Model.Count == 0) {
+          <tr>
+              <td colspan="12" class="text-center">
+                  <h3> Aun no existen fotos registradas</h3>
+              </td>
+          </tr>
+      }
+  </table>

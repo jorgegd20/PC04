@@ -12,5 +12,6 @@ namespace PC04.Data
             : base(options)
         {
         }
+        public DbSet<PC04.Models.Foto> Fotos { get; set; }
     }
 }

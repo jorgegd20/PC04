@@ -29,7 +29,7 @@ namespace PC04
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<FotoContext>(dco => dco.UseSqlServer("Server=.;Database=Practica3;Integrated Security=true;"));
+            services.AddDbContext<ApplicationDbContext>(dco => dco.UseSqlServer("Server=.;Database=Practica3;Integrated Security=true;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

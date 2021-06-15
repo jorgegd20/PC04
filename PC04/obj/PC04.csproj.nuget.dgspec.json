@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "J:\\USMP\\PC04\\PC04\\PC04.csproj": {}
+    "J:\\USMP\\PC04\\pc04\\PC04.csproj": {}
   },
   "projects": {
-    "J:\\USMP\\PC04\\PC04\\PC04.csproj": {
+    "J:\\USMP\\PC04\\pc04\\PC04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "J:\\USMP\\PC04\\PC04\\PC04.csproj",
+        "projectUniqueName": "J:\\USMP\\PC04\\pc04\\PC04.csproj",
         "projectName": "PC04",
-        "projectPath": "J:\\USMP\\PC04\\PC04\\PC04.csproj",
+        "projectPath": "J:\\USMP\\PC04\\pc04\\PC04.csproj",
         "packagesPath": "C:\\Users\\W10\\.nuget\\packages\\",
-        "outputPath": "J:\\USMP\\PC04\\PC04\\obj\\",
+        "outputPath": "J:\\USMP\\PC04\\pc04\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\W10\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,6 +57,22 @@
               "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "microsoft.entityframeworkcore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "microsoft.entityframeworkcore.design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "microsoft.entityframeworkcore.sqlserver": {
               "target": "Package",
               "version": "[5.0.7, )"
             }

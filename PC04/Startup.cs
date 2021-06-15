@@ -12,6 +12,7 @@ using PC04.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PC04.Models;
 
 namespace PC04
 {
@@ -27,14 +28,8 @@ namespace PC04
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDatabaseDeveloperPageExceptionFilter();
-
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+            services.AddDbContext<FotoContext>(dco => dco.UseSqlServer("Server=.;Database=Practica3;Integrated Security=true;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

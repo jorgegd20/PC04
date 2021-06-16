@@ -1,6 +1,7 @@
 @model Foto
 
 <form action="" method="post">
+    <input hidden asp-for="IdComentarios">
     <div class="form-group">
         <label asp-for="Titulo"></label>
         <input asp-for="Titulo" type="text" class="form-control">
@@ -16,6 +17,9 @@
         <label asp-for="Fecha"></label>
         <input asp-for="Fecha" type="text" value="@DateTime.Now.ToString()" class="form-control">
     </div>
-
+    <div class="form-group">
+        <label asp-for="IdComentarios"></label>
+        <input asp-for="IdComentarios" type="text" placeholder="Comentario" class="form-control">
+    </div>
     <button class="btn btn-primary">Agregar Comentario</button>
 </form>

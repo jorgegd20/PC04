@@ -49,6 +49,10 @@ namespace PC04.Controllers
         public IActionResult RegistrarConfirmacion(){
             return View();
         }
+        public IActionResult Imagen(int Id){
+            var imagen = _context.Fotos.Find(Id);
+            return View(imagen);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

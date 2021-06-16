@@ -8,14 +8,13 @@
           <th>Titulo</th>
           <th>Foto</th>
           <th>Fecha</th>
-          <th>Ver Imagen</th>
       </tr>
       @foreach (var item in Model)
       {
           <tr>
               <td>@item.Id</td>
-              <td>@item.Titulo</td>
-              <td><img src="@item.URL"></td>
+              <td><a href="/Home/Imagen/@item.Id">@item.Titulo</a> </td>
+              <td><a href="/Home/Imagen/@item.Id"><img src="@item.URL"></a></td>
               <td>@item.Fecha</td>
           </tr>
       }

@@ -13,5 +13,6 @@ namespace PC04.Data
         {
         }
         public DbSet<PC04.Models.Foto> Fotos { get; set; }
+        public DbSet<PC04.Models.Comentario> Comentarios { get; set; }
     }
 }

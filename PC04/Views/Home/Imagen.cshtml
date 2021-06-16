@@ -1,15 +1,12 @@
 @model Foto
 
-<h1>Registrar Foto</h1>
-
 <form action="" method="post">
     <div class="form-group">
         <label asp-for="Titulo"></label>
         <input asp-for="Titulo" type="text" class="form-control">
     </div>
     <div class="form-group">
-        <label asp-for="URL"></label>
-        <input asp-for="URL" type="text" class="form-control">
+        <img src="@Model.URL">
     </div>
     <div class="form-group">
         <label asp-for="Usuario"></label>
@@ -19,5 +16,6 @@
         <label asp-for="Fecha"></label>
         <input asp-for="Fecha" type="text" value="@DateTime.Now.ToString()" class="form-control">
     </div>
-    <button class="btn btn-primary">Registrar</button>
+
+    <button class="btn btn-primary">Agregar Comentario</button>
 </form>

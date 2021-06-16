@@ -30,12 +30,25 @@ namespace PC04.Controllers
         {
             return View();
         }
-
         public IActionResult Registrar()
         {
             return View();
         }
-        
+
+        [HttpPost]
+        public IActionResult Registrar(Foto f)
+        {
+            if (ModelState.IsValid) {
+                _context.Add(f);
+                _context.SaveChanges();
+                return RedirectToAction("RegistrarConfirmacion");
+            }
+            return View(f);
+        }
+
+        public IActionResult RegistrarConfirmacion(){
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

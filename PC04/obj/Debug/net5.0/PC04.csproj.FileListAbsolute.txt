@@ -109,3 +109,4 @@ J:\USMP\PC04\pc04\obj\Debug\net5.0\Razor\Views\Home\Registrar.cshtml.g.cs
 J:\USMP\PC04\pc04\obj\Debug\net5.0\Razor\Views\Home\Vacio.cshtml.g.cs
 J:\USMP\PC04\pc04\obj\Debug\net5.0\Razor\Views\Shared\_Registrados.cshtml.g.cs
 J:\USMP\PC04\pc04\obj\Debug\net5.0\Razor\Views\Home\RegistrarConfirmacion.cshtml.g.cs
+J:\USMP\PC04\pc04\obj\Debug\net5.0\Razor\Views\Home\Imagen.cshtml.g.cs
